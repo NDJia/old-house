@@ -1,1 +1,0 @@
-tweego -d $1 -o src $2

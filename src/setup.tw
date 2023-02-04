@@ -6,10 +6,7 @@
 }
 
 :: StoryTitle {"position":"275,0"}
-Your Grandmother's House
-
-:: StoryCaption {"position":"150,0"}
-GGJ2023
+The Old House
 
 :: StoryInterface
 <!-- https://www.motoslave.net/sugarcube/2/docs/#special-passage-storyinterface --> 
@@ -27,7 +24,26 @@ GGJ2023
 <<set $choice1 = "left">>
 <<set $choice2 = "right">>
 
-:: Start
-This Is The Title Screen
+:: Start [start]
+THE OLD HOUSE
 
-<<link "Start" "The Old House">><</link>>
+By Samira Soltani and N.D. Jia
+Created for Global Game Jam 2023
+
+
+<<link "Start Game" "The Old House">><</link>>
+
+:: Options
+<<link "restart">><<run Engine.restart()>><</link>>
+<<link "save/load">><<run UI.saves()>><</link>>
+<<link "about">><<script>>
+    Dialog.setup("About");
+    Dialog.wiki(Story.get("About").processText());
+    Dialog.open();
+<</script>><</link>>
+
+:: About
+The Old House
+
+by Samira Soltani and N.D. Jia
+Background music by Aghili: <a href="https://open.spotify.com/artist/6BwZweFp5xTRkL6q0SBfCJ">View artist on Spotify</a>

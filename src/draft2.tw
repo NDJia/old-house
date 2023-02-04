@@ -1,0 +1,257 @@
+/* background audio setup.
+audio.src = 
+'https://open.spotify.com/track/4EX86mPLqEpoSp3pgFtYAy?si=0aff0f8aead34426'
+audio. play();
+*/
+
+:: The Old House [Car_Mum] {"position":"300,1000","size":"100,100"}
+You are looking at the house. The old house with an old lady inside that she want to tell you how different your life style is from when she was in your age. 
+Could it be any worse? 
+"Honey! be careful! Don't tell anything insensitive that makes your grandmother sad."
+Yes, that's your mother, remionding you of being resepectful. 
+
+You answer [["I'll try"|Ok]] or [["Really! how do she expect me to do that?"|No]]
+
+
+:: Ok [Car_Mum] {"position":"700,1300","size":"100,100"}
+You go out of the car and [[Enter the house]]
+
+
+:: No [Car_Mum] {"position":"600,1000","size":"100,100"}
+"Honey! you are 16. I expect you to act like a grown up. She loves you. you are the only grandchild..." 
+You can't bear it anymore, continue your mother's sentence, "... that lives here in Canada. She really misses her homecountry that all of her family has lived there." 
+Then, you turn to your mother's face and see her that she is smiling, asking you kindly to behave better. 
+ you stop talking and answer: "ok Mum, don't look like that."
+ -"how?"
+you: that sweat annoyed smile that make me feel guilty! it has psychological effect on me!
+- "comm on! Don't start!" 
+Then she bends and gives you a goodbye kiss: "She loves you! Be kind"
+you are going out of car, looking annoyed at the old house. 
+
+You [[stop at the street until your mum goes|Bye Mum]] or [[Enter the house without looking back|Go inside]]
+
+
+:: Bye Mum [Car_Mum] {"position":"800,900","size":"100,100"}
+you check the street, your mum goes to work and you are waving, saying bye and [[Enter the house]]
+
+
+:: Go inside [Car_Mum] {"position":"800,1100","size":"100,100"}
+You use the pin to open the door. although you brought your own key that your grandmother gave it to you last month. A golden color key that it is wierd and so old because the house has a digital key and you don't need a key anymore But as she says this is a "symbol of our relationship not a normal key". 
+[[Enter the house]]
+
+
+:: Enter the house [House_welcome] {"position":"1100,1000","size":"100,100"}
+-"Oh, This is my favorite grandchild" 
+There she is. Smiling, expecting a big hug.
+You give her a hug, saying " and nobody knows I'm the only grandchild".
+She is giggling: " even if I had more, you would be my favorite."
+"Why you didn't use the golden key."
+
+You answer: [[really, who does that?|Not Key]] or [[Next time.|Key]]
+
+
+:: Not Key [House_welcome] {"position":"1300,1100","size":"100,100"}
+-"you always say that. Have a seat. I'll bring you tea."
+[[Thanks]]
+
+
+:: Key [House_welcome] {"position":"1300,900","size":"100,100"}
+-"you always say that. Have a seat. I'll bring you tea."
+[[Thanks]] or [[May I eat sth. I didn't have a breakfast|Breakfast]]
+
+
+:: Thanks [House_welcome] {"position":"1500,1100","size":"100,100"}
+I am gonna sit here.
+"Sure... help yourself. you are not a guest, although acting like one"
+She smiles and leaves the living room. You notice there is a persian music playing in the house.
+You are not familiar with the persian music. 
+[[ask who is the singer|Singer]] or [[Just put your backpack on the sofa and sit|Sit]]
+
+
+:: Breakfast [House_welcome] {"position":"1500,900","size":"100,100"}
+-"Sure." Come with me to the kitchen then."
+[[Go to Kitchen]] or [[Thanks]]
+
+
+:: Go to Kitchen [Kitchen] {"position":"2000,1100","size":"100,100"}
+You notice there is a persian music playing in the house.
+You are not familiar with the persian music. 
+[[ask who is the singer|Singer]] or Put your backpack on the table and [[check the fridge| Fridge]]
+
+
+:: Sit [LivingRoom] {"position":"2000,900","size":"100,100"}
+Your grandmother taps on your shoulder: "What you are thinking about? the breakfast is ready although it is kind of brunch." Then she smiles and shows the table. 
+[[Sit on the|chair]] or stand and get a bite of [[Sandwich]]
+
+
+:: Singer [LivingRoom] {"position":"1700,1400","size":"100,100"}
+"This song? yes, this is very old. even when I was young." 
+You feel like the song, although have no idea what is it about. 
+You sit on the chair, closed youe eyes and think of asking your grandmother to give the [[spotify link]]
+
+
+::  Fridge [Kitchen] {"position":"2400,1100","size":"100,100"}
+You are looking inside the fridge to check what you can eat. you're starving and didn't eat anything since...you don't remember when exactly but you are hungry mayby hangry. 
+Your grandmother taps on your shoulder: "What you are thinking about? the breakfast is ready although it is kind of brunch." Then she smiles and shows the table. 
+[[Sit on the|chair]] or stand and get a bite of [[Sandwich]]
+
+
+:: spotify link [Kitchen] {"position":"2000,1300","size":"100,100"}
+"oh... You like it. Sure honey." Then she raises her voise Emmy send my favorite grandchild this song's link. 
+You are anoyed. even you tell this story to your digital assistant. 
+Emmy answers: yes, favorite grandchild. 
+Now, your gramdmother is giggling again. Your breakfast is also ready. 
+[[Play Music]] or save the song and [[check the fridge| Fridge]]
+
+
+:: Play Music [Kitchen] {"position":"2300,1400","size":"100,100"}
+You put headphones on, listening to this song again and [[check the fridge| Fridge]]
+
+
+:: chair [Kitchen] {"position":"2700,1100","size":"100,100"}
+you are sitting on the chair and start eating your sandwich.
+" How is it going with the paining class?" She is waiting for your answer.
+ You say: "[[Not bad]]" or "[[Cool]]".
+
+
+:: Sandwich [Kitchen] {"position":"2700,900","size":"100,100"}
+You are eating the sandwich, and thinking about your homework project. Maybe it is not a bad idea to draw something new from this old house. You may not be in love with the house but she always have some new handcraft from homecountry that you like. Although you never told her. 
+" How is it going with the paining class?" She is waiting for your answer.
+ You say: "[[Not bad]]" or "[[Cool]]".
+
+
+:: Not bad [Kitchen] {"position":"3100,1400","size":"100,100"}
+You just node your head. 
+She starts to talk about when she was pinting and the old story. You just here: "blah...blah."
+"Ohhhhh.. noo" She shouts. She is bleeding. she cut her finger. "Please bring the first aid kit." she says while trying to pressurize the finger. 
+You are just [[looking at her]].
+
+
+:: Cool [Kitchen] {"position":"3100,1000","size":"100,100"}
+Well, actually I really like the class. Mum told me that you were paiting when you were... you know younge. 
+she is nodding: " Yes, and I really loved it."
+Now she is cutting some vegtables, and continue I never knew that I like paiting that much. When I was a child, I always had a dream to be a famous writer until I met your grandfather. then she closes her eyes, and continue chopping vegtabkes. 
+you are eatinng your sandwich and pretending that you are listening to her. 
+"Ohhhhh.. noo" She shouts. She is bleeding. she cut her finger. "Please bring the first aid kit." she says while trying to pressurize the finger. 
+You go and check the [[cabinets]] or just [[looking at her]].
+
+
+:: cabinets [Kitchen] {"position":"3300,1000","size":"100,100"}
+You start to checking all cabinets while she is guiding you to find it:" not this one, that one." 
+Suddenly you see a key behined spices. yoou haven't seen that key before. You check her and see that she is washing the finger in the kitchen sink: "Did you find it?" You [[grab]] the key or [[let it go]].
+
+
+:: looking at her [Kitchen] {"position":"3300,1200","size":"100,100"}
+"would you please find the first aid kit?" She asks.
+You start to checking all cabinets while she is guiding you to find it:" not this one, that one." 
+Suddenly you see a key behined spices. yoou haven't seen that key before. You check her and see that she is washing the finger in the kitchen sink: "Did you find it?" You [[grab]] the key or [[let it go]].
+
+
+:: grab [Kitchen] {"position":"3400,1400","size":"100,100"}
+You put the key into your pocket, Thinking where does it belong? maybe it's the store room that it is always closed? 
+Finally, you find the first aid kit and helps her to cover the wound. 
+Then, tell her that you need to go [[washroom]].
+
+
+:: let it go [Kitchen] {"position":"3600,1000","size":"100,100"}
+Finally, you find the first aid kit and helps her to cover the wound. 
+You sit [[on the chair]] and continue eating the sandwich or go to the living room for finding something to [[draw]].
+
+
+:: washroom {"position":"3200,1600","size":"100,100"}
+
+
+:: on the chair [Kitchen] {"position":"3700,1400","size":"100,100"}
+While you are eating your sandwich, the neighbour is screaming. 
+"Today is a dramma day again. Emmy, increase the volume."
+Music playlist is a very, calming realxing one that the granmother loves but makes you sleepy. the neighbour dramma becomes worse. you both go the living room. Your grandmother goes to the windows and you are checking the living room and you see a small album under newspapers. 
+It's a small album with a old cover that its colors has faded away. There is a persian word on the cover but you don't know anything in this language. Your groundmother still checking the yard and the neighbour. She doesn't notice that you saw the album. 
+You [[put the album on your back pack|backpack]] to check it later or asks your grandmother [[about the album]].
+
+
+:: draw [LivingRoom] {"position":"3900,1000","size":"100,100"}
+You go back to the living room, open and checking the area to find something to draw. There is a small album under newspapers.
+You check [[album]] or [[continue]] searching in the living room for drawing homework.
+
+
+:: album {"position":"4100,1000","size":"100,100"}
+It's a small album with a old cover that its colors has faded away. There is a persian word on the cover but you don't know anything in this language. Your groundmother still checking the yard and the neighbour. She doesn't notice that you saw the album. 
+You [[put the album on your back pack|backpack]] to check it later or asks your grandmother [[about the album]].
+
+
+:: continue [Vase] {"position":"3800,700","size":"100,100"}
+Finally you see a vase in the corner of living room. It seems exotic and you haven't seen it yet. You grab the vase to check it out. 
+"Let herrrr gooo. Please..." You are shocked and lose control of vase. Now, the vase is broken on the ground. It was the crazy neighbour; always a new drama. 
+Oh, no. your grandmother is coming. 
+Put the broken vase [[under sofa]] or wait and [[appolgy]] for what happened.
+
+
+:: appolgy {"position":"4100,700","size":"100,100"}
+She is coming to the living room : "what was that?" 
+You tell her that you were shocked because of screming in the neighbourhood and the vase is broken now. She seems sad but trying to hide it : "Oh, I just got that from a friend...but that's ok. no worries." That's a relief. "would you bring a me box from my room maybe I can repair it later. 
+You are embarressed and have nothing to say. Just [[go to upstairs]] to get a box from her room or go outside to chech the neigbours. maybe they need an emergency call. Someone is crying outside. Even your grandmother goes to windows to [[check the neigbour]].
+
+
+:: under sofa {"position":"1950,500","size":"100,100"}
+You put the broken vase under sofa and your granmother is coming.
+"Honey.... wakeup! we arrived" oh it is your mother and you are in the car. you should get out of the car and [[Enter the house]].
+
+
+:: go to upstairs {"position":"4400,1200","size":"100,100"}
+
+
+:: check the neigbour [Neighbor] {"position":"4300,800","size":"100,100"}
+You go out and see the neighbour woman Liz sit down on the ground and cries loudly. there is a cat in ler lap, seemingly is dead and blood is all over her body. You go over there and ask her if everything is ok. She knows you but look at you like a stranger, now.
+"It's ok" She says while sobbing and hugging the dead cat. 
+You ask her if she needs any [[help]] or just go back to the [[house]].
+
+
+:: help [Neighbor] {"position":"4500,700","size":"100,100"}
+She looks at you and says: "No, leave here. gooo. " He is coming back. 
+You see her husband is coming back with a gun. 
+you just go back to the [[house]] or stay to take Liz with you and [[protect her]].
+
+
+:: house {"position":"4600,900","size":"100,100"}
+"Where did you go?" Your granmother ask with a worry face. I told you before that Jimmy is crazy. 
+You say "no worries" and [[go to upstairs]] to find a box or just check the [[album]] that you found before.
+
+
+:: protect her [Neighbor] {"position":"4800,600","size":"100,100"}
+"Told you go. leave me alone" She says with a lower voice. And then she stands, wipe her tears and go back to her house, while the dead cat is on her arms. 
+ you go back to the [[house]] or stay to talk with her [[husband]].
+
+
+:: husband [Neighbor] {"position":"5100,1000","size":"100,100"}
+He stays at the distance and Liz join him and tries to make him calm and they go back to the house. 
+You go the [[house]] or [[Call Jimmmy]], the husband.
+
+
+:: Call Jimmmy [Neighbor] {"position":"4900,1100","size":"100,100"}
+"Hey Jimmy" You call him. Leave her alone or I call the police. 
+He stops, then turns back and prepare the gun to shoot you. 
+You go back to the [[house]] or [[stay]] there.
+
+
+:: stay [Neighbor] {"position":"4900,1300","size":"100,100"}
+He Shoots at you quite close that you can smell soil when it is hit by the shooting. 
+Your groundmother calls you: "Honey come to home." 
+Liz starts crying again,  takes the Jimmy's shoulder, begging to let you go. He seems so angry, stays at the same status. "Ready to shoot to your heart, Kiddo. Go home."
+You check your grandmother on the backdoor, asking you to come back. 
+
+You go to the [[house]] or [[stay there]] and find your phone to call the police.
+
+
+:: stay there [End] {"position":"5100,1500","size":"100,100"}
+You start to dial the police number, thinking that you are going to the end this dramma today. You haven't dialed the number completely that you feel pain in your stomach. your granmother is screamig. Liz is screaming. "What did you do?, Jimmy. Waht did you do". You see everything vague. just hear the voices, crying and someone says we had a shooting. Please send Ambulance. Please... soon. 
+You close your eveys and feel numb. 
+
+---End---
+
+
+:: backpack {"position":"4200,1400","size":"100,100"}
+
+
+:: about the album {"position":"3900,1600","size":"100,100"}
+
+
