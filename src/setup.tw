@@ -1,0 +1,33 @@
+:: StoryData
+{
+    "ifid": "A1380BFA-B727-4F4A-9DA5-5904F839E758",
+    "format": "SugarCube",
+    "format-version": "2.36.1"
+}
+
+:: StoryTitle {"position":"275,0"}
+Your Grandmother's House
+
+:: StoryCaption {"position":"150,0"}
+GGJ2023
+
+:: StoryInterface
+<!-- https://www.motoslave.net/sugarcube/2/docs/#special-passage-storyinterface --> 
+<!-- take note of 'data-init-passage' and 'data-passage' --> 
+<div id="background">
+    <div id="interface">
+
+        <div id="settings" data-passage="Options"></div>
+        <div id="passages"></div>
+    
+    </div>
+</div>
+
+:: StoryInit {"position":"25,0"}
+<<set $choice1 = "left">>
+<<set $choice2 = "right">>
+
+:: Start
+This Is The Title Screen
+
+<<link "Start" "The Old House">><</link>>

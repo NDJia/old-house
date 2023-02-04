@@ -1,0 +1,1 @@
+tweego -o dist/index.html src %1

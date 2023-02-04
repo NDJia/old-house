@@ -1,0 +1,24 @@
+body { height: 100vh; overflow: hidden }
+
+#background {
+    height: 100%;
+    padding: 2em;
+    background-image: url("img/sample.png");
+    background-repeat: repeat;
+}
+
+#passages {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+    width: 60%;
+    height: 50%;
+
+    padding: 2em;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
