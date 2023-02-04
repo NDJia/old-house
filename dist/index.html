@@ -98,7 +98,12 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://A1380BFA-B727-4F4A-9DA5-5904F839E758// --><tw-storydata name="The Old House" startnode="56" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="A1380BFA-B727-4F4A-9DA5-5904F839E758" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body { height: 100vh }
+	<!-- UUID://A1380BFA-B727-4F4A-9DA5-5904F839E758// --><tw-storydata name="The Old House" startnode="56" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="A1380BFA-B727-4F4A-9DA5-5904F839E758" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+    height: 100vh;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
 
 #background {
     height: 100%;
@@ -106,23 +111,34 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
     background-size: cover;
 }
 
+
+#ui-dialog-titlebar {
+    background-color: lightgray;
+}
+
+#ui-dialog-close {
+    color: black;
+}
+
+#ui-dialog-body {
+    background-color: white;
+}
+
 #settings {
     background-color: white;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 0.5% 1%;
-    background-color: black;
     display: flex;
     justify-content: space-evenly;
 }
 
 #settings a {
     padding: 0 2em;
+    color: darkblue;
 }
 
-#interface {
-    font-size: 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+#settings a:hover {
+
 }
 
 /*

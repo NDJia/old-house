@@ -1,4 +1,9 @@
-body { height: 100vh }
+body {
+    height: 100vh;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
 
 #background {
     height: 100%;
@@ -6,23 +11,34 @@ body { height: 100vh }
     background-size: cover;
 }
 
+
+#ui-dialog-titlebar {
+    background-color: lightgray;
+}
+
+#ui-dialog-close {
+    color: black;
+}
+
+#ui-dialog-body {
+    background-color: white;
+}
+
 #settings {
     background-color: white;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 0.5% 1%;
-    background-color: black;
     display: flex;
     justify-content: space-evenly;
 }
 
 #settings a {
     padding: 0 2em;
+    color: darkblue;
 }
 
-#interface {
-    font-size: 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+#settings a:hover {
+
 }
 
 /*
