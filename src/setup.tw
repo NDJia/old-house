@@ -21,7 +21,7 @@ The Old House
 </div>
 
 :: StoryInit
-<<run SimpleAudio.tracks.add("bgm", "audio/filtered.mp3");>>
+<<run SimpleAudio.tracks.add("bgm", "audio/filtered.ogg");>>
 
 :: Start [start]
 <span style="font-weight:bold;font-size:2em;">THE OLD HOUSE</span>
