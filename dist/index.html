@@ -191,9 +191,6 @@ passages class moves within the id
 // Remove outgoing elements when their opacity animation ends
 Config.passages.transitionOut = "opacity";
 
-// Remove outgoing elements after time in ms
-// Config.passages.transitionOut = 800;
-
 // delays load to prevent funny flashes due to :passagestart event
 Config.loadDelay = 1500;
 
@@ -281,7 +278,7 @@ Your grandmother taps on your shoulder: &quot;What you are thinking about? the b
 You are annoyed. even you tell this story to your digital assistant. 
 Emmy answers: yes, favourite grandchild. 
 Now, your grandmother is giggling again. Your breakfast is also ready. 
-[[Play Music]] or save the song and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="16" name="Play Music" tags="Kitchen" position="2300,1400" size="100,100">&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).play(); SimpleAudio.select(&quot;bgm&quot;).loop(true)&gt;&gt;\
+[[Play Music]] or save the song and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="16" name="Play Music" tags="Kitchen" position="2300,1400" size="100,100">&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).play()&gt;&gt;\
 You put headphones on, listen to this song again and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="17" name="chair" tags="LivingRoom" position="2700,1100" size="100,100">You are sitting on the chair and start eating your sandwich.
 &quot; How is it going with the painting class?&quot; She is waiting for your answer.
  You say: &quot;[[Not bad]]&quot; or &quot;[[Cool]]&quot;.</tw-passagedata><tw-passagedata pid="18" name="Sandwich" tags="Kitchen" position="2700,900" size="100,100">You are eating the sandwich and thinking about your homework project. Maybe it is not a bad idea to draw something new from this old house. You may not be in love with the house, but she always has some new handcraft from her home country that you like. Although you never told her. 
@@ -401,7 +398,7 @@ You have nothing to say.  You are in tears and hug her.
 &lt;div id=&quot;background&quot;&gt;
     &lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="StoryInit" tags="" position="975,725" size="100,100">&lt;&lt;set $endingsAchieved = []&gt;&gt;
-&lt;&lt;run SimpleAudio.tracks.add(&quot;bgm&quot;, &quot;audio\filtered.ogg&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Start" tags="start" position="1100,725" size="100,100">&lt;span style=&quot;font-weight:bold;font-size:2em;&quot;&gt;THE OLD HOUSE&lt;/span&gt;
+&lt;&lt;run SimpleAudio.tracks.add(&quot;bgm&quot;, &quot;audio/filtered.ogg&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Start" tags="start" position="1100,725" size="100,100">&lt;span style=&quot;font-weight:bold;font-size:2em;&quot;&gt;THE OLD HOUSE&lt;/span&gt;
 
 by Samira Soltani and N.D. Jia
 Created for Global Game Jam 2023

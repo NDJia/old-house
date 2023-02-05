@@ -100,7 +100,7 @@ Now, your grandmother is giggling again. Your breakfast is also ready.
 
 
 :: Play Music [Kitchen] {"position":"2300,1400","size":"100,100"}
-<<run SimpleAudio.select("bgm").play(); SimpleAudio.select("bgm").loop(true)>>\
+<<run SimpleAudio.select("bgm").play()>>\
 You put headphones on, listen to this song again and [[check the fridge| Fridge]]
 
 
