@@ -2,9 +2,6 @@
 // Remove outgoing elements when their opacity animation ends
 Config.passages.transitionOut = "opacity";
 
-// Remove outgoing elements after time in ms
-// Config.passages.transitionOut = 800;
-
 // delays load to prevent funny flashes due to :passagestart event
 Config.loadDelay = 1500;
 
