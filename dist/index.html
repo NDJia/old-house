@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://A1380BFA-B727-4F4A-9DA5-5904F839E758// --><tw-storydata name="The Old House" startnode="55" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="A1380BFA-B727-4F4A-9DA5-5904F839E758" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Height and font styling */
+	<!-- UUID://A1380BFA-B727-4F4A-9DA5-5904F839E758// --><tw-storydata name="The Old House" startnode="56" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="A1380BFA-B727-4F4A-9DA5-5904F839E758" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Height and font styling */
 body {
     height: 100vh;
     font-size: 1em;
@@ -195,7 +195,7 @@ Config.passages.transitionOut = 800;
 Config.loadDelay = 1500;
 
 setup.pData = {
-    "start": [30, 35, "chair.jpeg"],
+    "start": [30, 35, "doorway.jpeg"],
     "Car_Mum": [10, 5, "doorway.jpeg"],
     "House_welcome": [20, 10, "chair.jpeg"],
     "Kitchen": [5, 45, "kitchen.jpeg"],
@@ -252,7 +252,9 @@ You are not familiar with the persian music.
 You feel like the song, although have no idea what is it about. 
 You sit on the chair, closed youe eyes and think of asking your grandmother to give the [[spotify link]]</tw-passagedata><tw-passagedata pid="14" name="Fridge" tags="Kitchen" position="2400,1100" size="100,100">You are looking inside the fridge to check what you can eat. you&#39;re starving and didn&#39;t eat anything since...you don&#39;t remember when exactly but you are hungry mayby hangry. 
 Your grandmother taps on your shoulder: &quot;What you are thinking about? the breakfast is ready although it is kind of brunch.&quot; Then she smiles and shows the table. 
-[[Sit on the|chair]] or stand and get a bite of [[Sandwich]]</tw-passagedata><tw-passagedata pid="15" name="spotify link" tags="Kitchen" position="2000,1300" size="100,100">&quot;oh... You like it. Sure honey.&quot; Then she raises her voise Emmy send my favorite grandchild this song&#39;s link. 
+[[Sit on the|chair]] or stand and get a bite of [[Sandwich]]</tw-passagedata><tw-passagedata pid="15" name="spotify link" tags="Kitchen" position="2000,1300" size="100,100">&lt;&lt;set _song = SimpleAudio.select(&quot;bgm&quot;)&gt;&gt;\
+&lt;&lt;run _song.play()&gt;&gt;\
+&quot;oh... You like it. Sure honey.&quot; Then she raises her voise Emmy send my favorite grandchild this song&#39;s link. 
 You are anoyed. even you tell this story to your digital assistant. 
 Emmy answers: yes, favorite grandchild. 
 Now, your gramdmother is giggling again. Your breakfast is also ready. 
@@ -344,19 +346,19 @@ You close your eveys and feel numb.
         &lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
     
     &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Start" tags="start" position="600,725" size="100,100">&lt;span style=&quot;font-weight:bold;font-size:2em;&quot;&gt;THE OLD HOUSE&lt;/span&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="StoryInit" tags="" position="600,725" size="100,100">&lt;&lt;run SimpleAudio.tracks.add(&quot;bgm&quot;, &quot;audio/filtered.ogg&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Start" tags="start" position="725,725" size="100,100">&lt;span style=&quot;font-weight:bold;font-size:2em;&quot;&gt;THE OLD HOUSE&lt;/span&gt;
 
 by Samira Soltani and N.D. Jia
 Created for Global Game Jam 2023
 
 
-&lt;span style=&quot;font-weight:bold; font-size:1.25em;&quot;&gt;&lt;&lt;link &quot;Start Game&quot; &quot;The Old House&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="56" name="Options" tags="" position="725,725" size="100,100">&lt;&lt;link &quot;restart&quot;&gt;&gt;&lt;&lt;run Engine.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;span style=&quot;font-weight:bold; font-size:1.25em;&quot;&gt;&lt;&lt;link &quot;Start Game&quot; &quot;The Old House&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="57" name="Options" tags="" position="850,725" size="100,100">&lt;&lt;link &quot;restart&quot;&gt;&gt;&lt;&lt;run Engine.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;save/load&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;about&quot;&gt;&gt;&lt;&lt;script&gt;&gt;
     Dialog.setup(&quot;About&quot;);
     Dialog.wiki(Story.get(&quot;About&quot;).processText());
     Dialog.open();
-&lt;&lt;/script&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="About" tags="" position="850,725" size="100,100">The Old House
+&lt;&lt;/script&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="About" tags="" position="975,725" size="100,100">The Old House
 
 by Samira Soltani and N.D. Jia
 Background music by Aghili: &lt;a href=&quot;https://open.spotify.com/artist/6BwZweFp5xTRkL6q0SBfCJ&quot;&gt;View artist on Spotify&lt;/a&gt;

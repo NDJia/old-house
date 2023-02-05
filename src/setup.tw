@@ -20,6 +20,9 @@ The Old House
     </div>
 </div>
 
+:: StoryInit
+<<run SimpleAudio.tracks.add("bgm", "audio/filtered.ogg");>>
+
 :: Start [start]
 <span style="font-weight:bold;font-size:2em;">THE OLD HOUSE</span>
 
@@ -45,7 +48,18 @@ by Samira Soltani and N.D. Jia
 Background music by Aghili: <a href="https://open.spotify.com/artist/6BwZweFp5xTRkL6q0SBfCJ">View artist on Spotify</a>
 
 Background images:
-Sina Saadatmand
-Erik McClean
-Lesia and Serhii Artymovych
-Dmitriy Yarovoy
+<a href="https://unsplash.com/photos/Ixw6DwCypWk" target="_blank">Sina Saadatmand</a>
+<a href="https://pexels.com/photo/7475560" target="_blank">Erik McClean</a>
+<a href="https://unsplash.com/photos/QT97CphgE5A" target="_blank">Lesia and Serhii Artymovych</a>
+<a href="https://pexels.com/photo/969832" target="_blank">Dmitriy Yarovoy</a>
+<a href="https://pexels.com/photo/12970720" target="_blank">Céline</a>
+
+/*
+<<set $song = SimpleAudio.select("bgm")>>\
+<<run $song.play(); $song.loop(true)>>\
+*/
+
+/*
+<<run $song.unload()>>\
+<<unset $song>>\
+*/
