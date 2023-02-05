@@ -4,6 +4,7 @@ body {
     font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
+    overflow: hidden;
 }
 
 /* loading screen styling */
@@ -16,23 +17,21 @@ html[data-init="loading"] #init-loading {
     border-bottom-color: white;
 }
 
-a {
-    color:rgb(0, 64, 148);
-}
-
 #background {
     height: 100%;
     background-image: url("img/sample2.png");
     background-size: cover;
+    z-index: -1000;
 }
 
-#passage-start {
+#passages .start {
     text-align: center;
 }
 
 
 #ui-dialog-titlebar {
     background-color: lightgray;
+    border-radius: 10px 10px 0 0;
 }
 
 #ui-dialog-close {
@@ -41,14 +40,16 @@ a {
 
 #ui-dialog-body {
     background-color: white;
+    border-radius: 0 0 10px 10px;
 }
 
 #settings {
-    background-color: white;
-    border-bottom: 2px solid black;
-    padding: 0.5% 1%;
+    background-color: #222;
+    border-bottom: 3px solid white;
+    padding: 1%;
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.1em;
 }
 
 #settings a {
@@ -67,21 +68,23 @@ passages class moves within the id
 /* === Passage transitions style === */
 .passage {
     background-color: white;
-    border: 2px solid black;
+    border: 3px solid black;
+    border-radius: 20px;
     padding: 1em;
 
     position: absolute;
     height: auto;
     width: auto;
     min-width: 30%;
-    max-width: 60%;
-
-    left: 10%;
-    top: 10%;
+    max-width: 45%;
 
     transition: opacity 1s ease;
 }
 
 .passage-out {
 	opacity: 0;
+}
+
+.passage[data-tags="End"] b {
+    font-size: 1.2em;
 }

@@ -11,17 +11,14 @@ The Old House
 :: StoryInterface
 <!-- https://www.motoslave.net/sugarcube/2/docs/#special-passage-storyinterface --> 
 <!-- take note of 'data-init-passage' and 'data-passage' --> 
+<div id="settings" data-passage="Options"></div>
 <div id="background">
-    <div id="interface">
-
-        <div id="settings" data-passage="Options"></div>
-        <div id="passages"></div>
-    
-    </div>
+    <div id="passages"></div>
 </div>
 
 :: StoryInit
-<<run SimpleAudio.tracks.add("bgm", "audio/filtered.ogg");>>
+<<set $endingsAchieved = []>>
+<<run SimpleAudio.tracks.add("bgm", "audio\filtered.ogg")>>
 
 :: Start [start]
 <span style="font-weight:bold;font-size:2em;">THE OLD HOUSE</span>
@@ -33,33 +30,36 @@ Created for Global Game Jam 2023
 <span style="font-weight:bold; font-size:1.25em;"><<link "Start Game" "The Old House">><</link>></span>
 
 :: Options
-<<link "restart">><<run Engine.restart()>><</link>>
-<<link "save/load">><<run UI.saves()>><</link>>
-<<link "about">><<script>>
+<<link "Restart">><<run Engine.restart()>><</link>>
+<<link "Save/Load">><<run UI.saves()>><</link>>
+<<link "About">><<script>>
     Dialog.setup("About");
     Dialog.wiki(Story.get("About").processText());
     Dialog.open();
 <</script>><</link>>
 
 :: About
-The Old House
+<b>The Old House</b>
 
-by Samira Soltani and N.D. Jia
-Background music by Aghili: <a href="https://open.spotify.com/artist/6BwZweFp5xTRkL6q0SBfCJ">View artist on Spotify</a>
+Written by Samira Soltani. Page design by N.D. Jia.
 
-Background images:
-<a href="https://unsplash.com/photos/Ixw6DwCypWk" target="_blank">Sina Saadatmand</a>
-<a href="https://pexels.com/photo/7475560" target="_blank">Erik McClean</a>
-<a href="https://unsplash.com/photos/QT97CphgE5A" target="_blank">Lesia and Serhii Artymovych</a>
-<a href="https://pexels.com/photo/969832" target="_blank">Dmitriy Yarovoy</a>
-<a href="https://pexels.com/photo/12970720" target="_blank">Céline</a>
+Background images courtesy of Pexels, Unsplash, and Pixabay,
+with post-processing by N.D. Jia.
 
-/*
-<<set $song = SimpleAudio.select("bgm")>>\
-<<run $song.play(); $song.loop(true)>>\
-*/
+Background music by Aghili, a Persian vocalist.
 
-/*
-<<run $song.unload()>>\
-<<unset $song>>\
-*/
+:: EndingsList [widget]
+<<widget "listEndings">>\
+<b>Endings Achieved:</b>
+<ul>\
+<<for _e = 0; _e < $endingsAchieved.length; _e++>>\
+    <<capture _e>>\
+        <li>"$endingsAchieved[_e]"</li>
+    <</capture>>\
+<</for>>\
+</ul>\
+\
+Achieved <b><<print $endingsAchieved.length>></b> of <b>3</b> endings.
+
+<span style="font-weight:bold;font-size:1.2em;"><<link "Play Again?" "The Old House">><</link>></span>
+<</widget>>
