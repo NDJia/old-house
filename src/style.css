@@ -1,3 +1,4 @@
+/* Height and font styling */
 body {
     height: 100vh;
     font-size: 1em;
@@ -5,10 +6,28 @@ body {
     color: black;
 }
 
+/* loading screen styling */
+html[data-init="loading"] #init-screen {
+    background: #aaa;
+}
+
+html[data-init="loading"] #init-loading {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+a {
+    color:rgb(0, 64, 148);
+}
+
 #background {
     height: 100%;
     background-image: url("img/sample2.png");
     background-size: cover;
+}
+
+#passage-start {
+    text-align: center;
 }
 
 
@@ -34,13 +53,7 @@ body {
 
 #settings a {
     padding: 0 2em;
-    color: darkblue;
 }
-
-#settings a:hover {
-
-}
-
 /*
 the passages div takes up the full screen space, and takes care of font styling etc.
 passages class moves within the id

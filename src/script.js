@@ -9,11 +9,12 @@ Config.passages.transitionOut = 800;
 Config.loadDelay = 1500;
 
 setup.pData = {
-    "start": [30, 35, "sample.png"],
-    "Car_Mum": [10, 5, "sample.png"],
-    "House_welcome": [20, 10, "sample2.png"],
-    "Kitchen": [5, 45, "sample3.png"],
-    "LivingRoom": [10, 20, "sample4.png"]
+    "start": [30, 35, "doorway.jpeg"],
+    "Car_Mum": [10, 5, "doorway.jpeg"],
+    "House_welcome": [20, 10, "chair.jpeg"],
+    "Kitchen": [5, 45, "kitchen.jpeg"],
+    "LivingRoom": [10, 20, "carpet.jpeg"],
+    "Neighbour": [15, 5, "doorway.jpeg"]
 }
 
 $(document).on(':passagestart', function (ev) {

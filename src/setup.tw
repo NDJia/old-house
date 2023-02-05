@@ -20,18 +20,14 @@ The Old House
     </div>
 </div>
 
-:: StoryInit {"position":"25,0"}
-<<set $choice1 = "left">>
-<<set $choice2 = "right">>
-
 :: Start [start]
-THE OLD HOUSE
+<span style="font-weight:bold;font-size:2em;">THE OLD HOUSE</span>
 
-By Samira Soltani and N.D. Jia
+by Samira Soltani and N.D. Jia
 Created for Global Game Jam 2023
 
 
-<<link "Start Game" "The Old House">><</link>>
+<span style="font-weight:bold; font-size:1.25em;"><<link "Start Game" "The Old House">><</link>></span>
 
 :: Options
 <<link "restart">><<run Engine.restart()>><</link>>
@@ -47,3 +43,9 @@ The Old House
 
 by Samira Soltani and N.D. Jia
 Background music by Aghili: <a href="https://open.spotify.com/artist/6BwZweFp5xTRkL6q0SBfCJ">View artist on Spotify</a>
+
+Background images:
+Sina Saadatmand
+Erik McClean
+Lesia and Serhii Artymovych
+Dmitriy Yarovoy
