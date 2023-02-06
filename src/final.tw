@@ -85,7 +85,6 @@ You sit on the chair, close your eyes and think of asking your grandmother to gi
 
 
 ::  Fridge [Kitchen] {"position":"2400,1100","size":"100,100"}
-<<run SimpleAudio.select("bgm").stop()>>\
 You are looking inside the fridge to check what you can eat. you're starving and didn't eat anything since...you don't remember when exactly, but you are hungry, maybe hangry. 
 Your grandmother taps on your shoulder: "What you are thinking about? the breakfast is ready, although it is kind of brunch." Then she smiles and shows the table. 
 [[Sit on the|chair]] or stand and get a bite of [[Sandwich]]
@@ -100,7 +99,7 @@ Now, your grandmother is giggling again. Your breakfast is also ready.
 
 
 :: Play Music [Kitchen] {"position":"2300,1400","size":"100,100"}
-<<run SimpleAudio.select("bgm").play()>>\
+<<run SimpleAudio.select("bgm").play(); SimpleAudio.select("bgm").loop(true)>>\
 You put headphones on, listen to this song again and [[check the fridge| Fridge]]
 
 
@@ -373,5 +372,5 @@ You have nothing to say.  You are in tears and hug her.
     <<set $endingsAchieved.push("Family")>>
 <</if>>
 <</nobr>>\
-<b>Ending #3: "Stay to the End"</b>
+<b>Ending #3: "Family"</b>
 <<listEndings>>

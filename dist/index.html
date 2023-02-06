@@ -271,14 +271,13 @@ You are not familiar with Persian music.
 [[ask who is the singer|Singer]] or Put your backpack on the table and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="12" name="Sit" tags="LivingRoom" position="2000,900" size="100,100">Your grandmother taps on your shoulder: &quot;What you are thinking about? the breakfast is ready, although it is kind of brunch.&quot; Then she smiles and shows the table. 
 [[Sit on the sofa|chair]] or stand and get a bite of [[Sandwich]]</tw-passagedata><tw-passagedata pid="13" name="Singer" tags="LivingRoom" position="1700,1400" size="100,100">&quot;This song? Yes, this is very old. Even when I was young.&quot; 
 You feel like the song, although you have no idea what it is about. 
-You sit on the chair, close your eyes and think of asking your grandmother to give the [[spotify link]]</tw-passagedata><tw-passagedata pid="14" name="Fridge" tags="Kitchen" position="2400,1100" size="100,100">&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).stop()&gt;&gt;\
-You are looking inside the fridge to check what you can eat. you&#39;re starving and didn&#39;t eat anything since...you don&#39;t remember when exactly, but you are hungry, maybe hangry. 
+You sit on the chair, close your eyes and think of asking your grandmother to give the [[spotify link]]</tw-passagedata><tw-passagedata pid="14" name="Fridge" tags="Kitchen" position="2400,1100" size="100,100">You are looking inside the fridge to check what you can eat. you&#39;re starving and didn&#39;t eat anything since...you don&#39;t remember when exactly, but you are hungry, maybe hangry. 
 Your grandmother taps on your shoulder: &quot;What you are thinking about? the breakfast is ready, although it is kind of brunch.&quot; Then she smiles and shows the table. 
 [[Sit on the|chair]] or stand and get a bite of [[Sandwich]]</tw-passagedata><tw-passagedata pid="15" name="spotify link" tags="Kitchen" position="2000,1300" size="100,100">&quot;Oh... You like it. Sure, honey.&quot; Then she raises her voice Emmy sends my favourite grandchild this song&#39;s link. 
 You are annoyed. even you tell this story to your digital assistant. 
 Emmy answers: yes, favourite grandchild. 
 Now, your grandmother is giggling again. Your breakfast is also ready. 
-[[Play Music]] or save the song and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="16" name="Play Music" tags="Kitchen" position="2300,1400" size="100,100">&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).play()&gt;&gt;\
+[[Play Music]] or save the song and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="16" name="Play Music" tags="Kitchen" position="2300,1400" size="100,100">&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).play(); SimpleAudio.select(&quot;bgm&quot;).loop(true)&gt;&gt;\
 You put headphones on, listen to this song again and [[check the fridge| Fridge]]</tw-passagedata><tw-passagedata pid="17" name="chair" tags="LivingRoom" position="2700,1100" size="100,100">You are sitting on the chair and start eating your sandwich.
 &quot; How is it going with the painting class?&quot; She is waiting for your answer.
  You say: &quot;[[Not bad]]&quot; or &quot;[[Cool]]&quot;.</tw-passagedata><tw-passagedata pid="18" name="Sandwich" tags="Kitchen" position="2700,900" size="100,100">You are eating the sandwich and thinking about your homework project. Maybe it is not a bad idea to draw something new from this old house. You may not be in love with the house, but she always has some new handcraft from her home country that you like. Although you never told her. 
@@ -391,7 +390,7 @@ You have nothing to say.  You are in tears and hug her.
     &lt;&lt;set $endingsAchieved.push(&quot;Family&quot;)&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
-&lt;b&gt;Ending #3: &quot;Stay to the End&quot;&lt;/b&gt;
+&lt;b&gt;Ending #3: &quot;Family&quot;&lt;/b&gt;
 &lt;&lt;listEndings&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="StoryInterface" tags="" position="850,725" size="100,100">&lt;!-- https://www.motoslave.net/sugarcube/2/docs/#special-passage-storyinterface --&gt; 
 &lt;!-- take note of &#39;data-init-passage&#39; and &#39;data-passage&#39; --&gt; 
 &lt;div id=&quot;settings&quot; data-passage=&quot;Options&quot;&gt;&lt;/div&gt;
@@ -418,6 +417,7 @@ Background images courtesy of Pexels, Unsplash, and Pixabay,
 with post-processing by N.D. Jia.
 
 Background music by Aghili, a Persian vocalist.</tw-passagedata><tw-passagedata pid="62" name="EndingsList" tags="widget" position="225,850" size="100,100">&lt;&lt;widget &quot;listEndings&quot;&gt;&gt;\
+&lt;&lt;run SimpleAudio.select(&quot;bgm&quot;).stop()&gt;&gt;\
 &lt;b&gt;Endings Achieved:&lt;/b&gt;
 &lt;ul&gt;\
 &lt;&lt;for _e = 0; _e &lt; $endingsAchieved.length; _e++&gt;&gt;\

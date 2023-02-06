@@ -50,6 +50,7 @@ Background music by Aghili, a Persian vocalist.
 
 :: EndingsList [widget]
 <<widget "listEndings">>\
+<<run SimpleAudio.select("bgm").stop()>>\
 <b>Endings Achieved:</b>
 <ul>\
 <<for _e = 0; _e < $endingsAchieved.length; _e++>>\
